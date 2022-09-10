@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Restablecer Contraseña";
+}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../Content/Estilo.css">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+
+<body>
+    <div class="register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+                <h3>Hola</h3>
+                <p>Recuerda introducir una contraseña con seguridad que sea recordada con facilidad para ti</p>
+            </div>
+            <div class="col-md-9 register-right">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Restablecimiento de contraseña</h3>
+                        <div class="row register-form">
+                            <form>
+                                <!-- 2 column grid layout with text inputs for the first and last names -->
+                                <div class="row mb-4">
+                                    <div class="col">
+                                        <div class="form-outline">
+                                            <label class="form-label" for="form3Example1">Contraseña Nueva</label>
+                                            <input type="password" id="form3Example1" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-outline">
+                                            <label class="form-label" for="form3Example1">Confirmar Contraseña</label>
+                                            <input type="password" id="form3Example1" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-primary btn-block mb-4 col-12">Restablecer</button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>

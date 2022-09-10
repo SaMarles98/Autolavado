@@ -1,0 +1,121 @@
+﻿@{
+    ViewBag.Title = "Polichado 3M";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="../css/Estilos.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/473c89d30e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="fondo-serv">
+        <p class="lavado">Detalle del servicio</p>
+    </div>
+
+    <section class="item-articulo section" style="padding-bottom: 10px;">
+        <div class="top-area">
+
+            <div class="container-section">
+                <!--<img src="../img/Pics/img8.jpg" class="img8" width="1000PX">-->
+                <ul class="slider">
+                    <li id="slide1">
+                        <img src="../img/Pics/img8.jpg" />
+                    </li>
+                    <li id="slide2">
+                        <img src="../img/Pics/img9.jpg" />
+                    </li>
+                    <li id="slide3">
+                        <img src="../img/Pics/img8.jpg" />
+                    </li>
+                </ul>
+
+                <ul class="menu">
+                    <li>
+                        <a href="#slide1"><img class="carrusel" src="../img/Pics/img8.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="#slide2"><img class="carrusel1" src="../img/Pics/img9.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="#slide3"><img class="carrusel2" src="../img/Pics/img8.jpg"></a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="">
+                <h3 class="title">
+                    Polichado 3M
+                </h3>
+                <h3 class="precio"> $160.000-$220.000</h3>
+                <h4 class="title">Detalles</h4>
+
+                <p>
+                    Enjuague del auto con agua a presión, lavado del exterior con shampoo profesional con PH neutro, secado con toallas de microfibra, aspirado básico, limpieza de polvo básico del interior , protector en llantas, impermeabilización de guardabarros, aplicación de hidratante en partes plásticas exteriores, limpieza de vidrios exterior e interior.
+                </p>
+
+
+                <form style="display: block; padding-top: 60px;">
+                    <div class="agenda-servicio" style="display: flex;">
+                        <h5 style="padding-right: 10px;">Tipo de vehiculo:</h5>
+                        <select class="input-servicio" name="tipo-vehiculo">
+                            <option value="Camioneta">Elegir una opción</option>
+                            <option value="Camioneta">Camioneta</option>
+                            <option value="Camioneta">Carro</option>
+                        </select>
+                    </div>
+                    <div class="agenda-cita" style="display: flex;">
+                        <h5 style="padding-right: 10px;">Fecha servicio:</h5>
+                        <input type="date" name="" class="input-servicio">
+                    </div>
+                    <div style="display: flex;">
+                        <h5 style="padding-right: 10px;">Horario::</h5>
+                        <select class="input-servicio" name="tipo-vehiculo">
+                            <option value="Camioneta">Elegir un horario</option>
+                            <option value="Camioneta">12 pm - 3 pm</option>
+                            <option value="Camioneta">3 pm - 7 pm</option>
+                            <option value="Camioneta">7 am - 9 am</option>
+                            <option value="Camioneta">9 am - 12 pm</option>
+                        </select>
+                    </div>
+                    <div style="display: flex;">
+                        <input type="number" name="" class="input-servicio input-cantidad">
+                        <button type="submit" class="btn-añadir-carrito">Añadir al carrito</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="item-articulo section">
+        <div class="top-comentario">
+
+            <form style="display: contents;">
+                <div style="display: flex; width: 100%;">
+                    <textarea cols="10" rows="10" placeholder="Ingrese un comentario" style="width: 100%;"></textarea>
+                </div>
+                <div style="display: flex;">
+                    <input type="text" name="" placeholder="Nombre" class="input-servicio" style="width: 450px; margin-right: 20px;">
+                    <input type="text" name="" placeholder="Email" class="input-servicio" style="width: 450px;">
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+</body>

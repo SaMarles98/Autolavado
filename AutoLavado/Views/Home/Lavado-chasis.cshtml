@@ -1,0 +1,164 @@
+﻿
+@{
+    ViewBag.Title = "Lavado Chasis";
+}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../Content/Estilo.css">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+
+<body>
+
+    <section class="product-details-wrapper mt-30 pt-6 pb-6">
+        <div class="container">
+            <div class="product-details-style-2">
+                <div class="product-details-content text-center">
+                    <h2 class="title">Lavado De Chasis</h2>
+             
+                 
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="product-details-image mt-50">
+                            <div class="product-image">
+                                <div class="product-image-active tab-content"
+                                     id="v-pills-tabContent-2">
+                                    <div class="single-image tab-pane fade show active"
+                                         id="v-pills-6"
+                                         role="tabpanel"
+                                         aria-labelledby="v-pills-6-tab">
+                                        <img src="../images/slider4.png"
+                                             alt="" />
+                                    </div>
+                                    <div class="single-image tab-pane fade"
+                                         id="v-pills-7"
+                                         role="tabpanel"
+                                         aria-labelledby="v-pills-7-tab">
+                                        <img src="../images/slider4.png"
+                                             alt="" />
+                                    </div>
+                                    <div class="single-image tab-pane fade"
+                                         id="v-pills-8"
+                                         role="tabpanel"
+                                         aria-labelledby="v-pills-8-tab">
+                                        <img src="../images/slider4.png"
+                                             alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-thumb-image">
+                                <div class="product-thumb-image-active nav nav-pills"
+                                     id="v-pills-tab-2"
+                                     role="tablist"
+                                     aria-orientation="vertical">
+                                    <div class="single-thumb active"
+                                         id="v-pills-6-tab"
+                                         data-bs-toggle="pill"
+                                         href="#v-pills-6"
+                                         role="tab"
+                                         aria-controls="v-pills-6"
+                                         aria-selected="true">
+                                        <img src="../images/slider4.png"
+                                             alt="" />
+                                    </div>
+                                    <div class="single-thumb"
+                                         id="v-pills-7-tab"
+                                         data-bs-toggle="pill"
+                                         href="#v-pills-7"
+                                         role="tab"
+                                         aria-controls="v-pills-7"
+                                         aria-selected="false">
+                                        <img src="../images/slider4.png"
+                                             alt="" />
+                                    </div>
+                                    <div class="single-thumb"
+                                         id="v-pills-8-tab"
+                                         data-bs-toggle="pill"
+                                         href="#v-pills-8"
+                                         role="tab"
+                                         aria-controls="v-pills-8"
+                                         aria-selected="false">
+                                        <img src="../images/slider4.png"
+                                             alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt-7 ps-5">
+                        <div class="product-details-content mt-45">
+                            <div class="product-items flex-wrap">
+                                <h2 class="item-title">Descripción</h2>
+                                <p>
+                                    Un automóvil o coche, es un vehículo mecánico de propulsión propia destinado al transporte de personas,
+                                    generalmente con cuatro ruedas y capacidad entre una y nueve plazas. Las ruedas "delanteras" pueden moverse
+                                    hacia los lados para permitir giros y tomar las curvas
+                                </p>
+                            </div>
+
+                            <form style="display: block; padding-top: 30px;">
+                                <div class="agenda-servicio" style="display: flex;">
+                                    <h5 style="padding-right: 10px;">Tipo de vehiculo:</h5>
+                                    <select class="input-servicio" name="tipo-vehiculo">
+                                        <option value="Camioneta">Elegir una opción</option>
+                                        <option value="Camioneta">Camioneta</option>
+                                        <option value="Camioneta">Carro</option>
+                                    </select>
+                                </div>
+                                <div class="agenda-cita" style="display: flex;">
+                                    <h5 style="padding-right: 10px;">Fecha servicio:</h5>
+                                    <input type="date" name="" class="input-servicio">
+                                </div>
+                                <div class="horario" style="display: flex;">
+                                    <h5 style="padding-right: 10px;">Horario:</h5>
+                                    <select class="input-servicio" name="tipo-vehiculo">
+                                        <option value="Camioneta">Elegir un horario</option>
+                                        <option value="Camioneta">12 pm - 3 pm</option>
+                                        <option value="Camioneta">3 pm - 7 pm</option>
+                                        <option value="Camioneta">7 am - 9 am</option>
+                                        <option value="Camioneta">9 am - 12 pm</option>
+                                    </select>
+                                </div>
+                            </form>
+
+                            <div class="product-select-wrapper flex-wrap">
+                                <div class="product-price">
+                                    <h6 class="price-title">Precio:</h6>
+                                    <p class="sale-price">$22.000</p>
+                                </div>
+
+
+                                <div class="select-item">
+                                    <h6 class="select-title">Seleccione la cantiad:</h6>
+
+                                    <div class="select-quantity">
+                                        <button type="button" id="sub" class="sub">
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+                                        <input type="text" value="1" />
+                                        <button type="button" id="add" class="add">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-grid gap-2 d-md-block">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fa fa-cart-plus me-3" aria-hidden="true"></i>Añadir al carrito
+                                </button>
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fa fa-shopping-cart me-3" aria-hidden="true"></i>Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
